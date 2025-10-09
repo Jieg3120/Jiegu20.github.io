@@ -70,7 +70,7 @@ input#username:focus:invalid,
 input#email:focus:invalid,
 input#state:focus:invalid,
 input#city:focus:invalid{
-    background: #fff8c4 url("images/purple.png") right/contain no-repeat;
+    background: #fff8c4 url("purple.png") right/contain no-repeat;
 }
 input#firstName:focus:valid,
 input#lastName:focus:valid,
@@ -78,7 +78,7 @@ input#username:focus:valid,
 input#email:focus:valid,
 input#state:focus:valid,
 input#city:focus:valid{
-    background:#ffffff url("images/blue.png") right/contain no-repeat;
+    background:#ffffff url("blue.png") right/contain no-repeat;
 }
 .form-control:invalid{
     border-color:#dc3545;
