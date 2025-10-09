@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+.body { background-color: #3498db;
+       color: #333333;
+	   font-family: Quicksand; 
+}
+
+
+nav.navbar img{
+	width: 80px;
+	height: 80px;
+}
+#pic1{ height: 550px;
+	   width: ;
+            background-image: url(pic1.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%; 
+}
+#pic2{ height: 550px;
+	   width: ;
+            background-image: url(pic2.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%; 
+}
+
+
+
+header{  display: flex;
+         margin-left: 570px;
+         font-size: 2em;
+         margin-top: 50px;
+         margin-bottom: 50px;
+
+}
+
+h1{ display: flex;
+         margin-left: 50px;
+         font-size: 2em;
+         margin-top: 50px;
+         margin-bottom: 50px;
+
+}
+
+
+footer { background-color: #3498db;
+         font-size: 1em;
+		 font-style: italic;
+		 text-align: center;
+		 padding-bottom: 1em;
+		 border-top: 2px solid black;
+}
+footer a{color: darkblue;}
+
+p{font-family: 'Quicksand', sans-serif;
+}
+.form-signin {
+  max-width: 530px;
+  padding: 15px;
+}
+nav.navbar { background-color: #3498db;
+}
+h2 {background-color: #3498db; color: white;
+    padding:1em; font-size:1em;
+    text-align:center;}
+/* Styles for forms */
+
+input#firstName:focus:invalid,
+input#lastName:focus:invalid,
+input#username:focus:invalid,
+input#email:focus:invalid,
+input#state:focus:invalid,
+input#city:focus:invalid{
+    background: #fff8c4 url("images/purple.png") right/contain no-repeat;
+}
+input#firstName:focus:valid,
+input#lastName:focus:valid,
+input#username:focus:valid,
+input#email:focus:valid,
+input#state:focus:valid,
+input#city:focus:valid{
+    background:#ffffff url("images/blue.png") right/contain no-repeat;
+}
+.form-control:invalid{
+    border-color:#dc3545;
+}
+.form-control:valid{
+    border-color:#28a745;
+}
+main { background-color: #3498db;
+}
+nav {  text-align: center;
+      font-size: 1.25em;
+}
+nav a { text-decoration: none; }
+nav a:link     { color: #333333; }
+nav a:visited { color: #333333; }
+
+
