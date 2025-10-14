@@ -1,131 +1,325 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetVibe</title>
-    <link href="PetVibe.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="shortcut icon" href="fava.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
-    <style>
-    .btn { margin-bottom: 50px;
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetVibe</title>
+  <link href="PetVibe.css" rel="stylesheet">
+  <link rel="shortcut icon" href="fava.ico">
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <style>
+    .btn {
+      margin-bottom: 50px;
     }
 
-  </style>
-  </head>
-<main>
+nav.navbar img{
+  width: 80px;
+  height: 80px;
+}
+nav.navbar { background-color: #3498db;
+}
+nav {  text-align: center;
+      font-size: 1.25em;
+}
+nav a { text-decoration: none; }
+nav a:link     { color: #333333; }
+nav a:visited { color: #333333; }
+
+    .page-header {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    footer { background-color: #3498db;
+         font-size: 1em;
+     font-style: italic;
+     text-align: center;
+     padding-bottom: 1em;
+     border-top: 2px solid black;
+}  </style>
+</head>
+
 <body>
+  <main>
     <nav class="navbar">
-      <a href="index.html"><img src="logo.png" alt="logo"></a>
-      <a href='index.html'>Home</a>&nbsp;
-      <a href='pet adoption.html'>Pet Adoption</a>&nbsp;
-      <a href='pet grooming.html'>Pet Grooming</a>&nbsp;
-      <a href='shop.html'>Shop</a>&nbsp;
-      <a href='contact.html'>Contact</a>&nbsp;
+      <a href="index.html"><img src="logo.png" alt="logo" height="50"></a>
+      <a href='index.html'>Home</a>
+      <a href='pet adoption.html'>Pet Adoption</a>
+      <a href='pet grooming.html'>Pet Grooming</a>
+      <a href='shop.html'>Shop</a>
+      <a href='contact.html'>Contact</a>
     </nav>
-<div class="page-header">
-    <h1>Find Pets to Adopt
-    </h1>
-  </div>
 
-  <div class="row">
+    <div class="page-header">
+      <h1>Find Pets to Adopt</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Pet 1 -->
+        <div class="col-md-3 text-center">
+          <img src="peta1.jpg" width="250px" height="200px" class="rounded">
+          <br>
+          <b>Hal</b><br />
+          Puppy: 0-12 months, Male
+          <br>
+          <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet1">Details</button>
+        </div>
+
+        <!-- Pet 2 -->
+        <div class="col-md-3 text-center">
+          <img src="peta2.jpg" width="250px" height="200px" class="rounded">
+          <br>
+          <b>Richard</b><br />
+          Puppy: 0-12 months, Male
+          <br>
+          <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet2">Details</button>
+        </div>
+
+        <!-- Pet 3 -->
+        <div class="col-md-3 text-center">
+          <img src="peta3.jpg" width="250px" height="200px" class="rounded">
+          <br>
+          <b>Day</b><br />
+          Young: 1-5 years, Male
+          <br>
+          <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet3">Details</button>
+        </div>
+
+        <!-- Pet 4 -->
+        <div class="col-md-3 text-center">
+          <img src="peta4.jpg" width="250px" height="200px" class="rounded">
+          <br>
+          <b>Crystal</b><br />
+          Young: 1-5 years, Female
+          <br>
+          <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet4">Details</button>
+        </div>
+            <!-- 5 -->
+        <div class="col-md-3 text-center">
+          <img src="peta5.jpg" width="250px" height="200px" class="rounded">
+      <br><b>Louie</b><br>
+      Adult: 5–7 years, Male<br>
+      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet5">Details</button>
+    </div>
+
+    <!-- 6 -->
+       <div class="col-md-3 text-center">
+      <img src="peta6.jpg" width="250" height="200" class="rounded">
+      <br><b>Monkey</b><br>
+      Adult: 7–10 years, Male<br>
+      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet6">Details</button>
+    </div>
+
+    <!-- 7 -->
     <div class="col-md-3 text-center">
-       <img src="peta1.jpg" width="250px" height="200px">
-      <br>
-      Hal<br />
-      Puppy: 0-12 months, Male
-      <br>
-     <a href="#" class="btn btn-info">Details</a>
+      <img src="peta7.jpg" width="250" height="200" class="rounded">
+      <br><b>Cheetara</b><br>
+      Adult: 7–10 years, Female<br>
+      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet7">Details</button>
     </div>
 
-
-
+    <!-- 8 -->
     <div class="col-md-3 text-center">
-        <img src="peta2.jpg" width="250px" height="200px">
-      <br>
-      Richard<br />
-      Puppy: 0-12 months, Male
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
+      <img src="peta8.jpg" width="250" height="200" class="rounded">
+      <br><b>Bella</b><br>
+      Senior: 10+ years, Female<br>
+      <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#pet8">Details</button>
     </div>
-
-    <div class="col-md-3 text-center">
-      <img src="peta3.jpg" width="250px" height="200px">
-      <br>
-      Day<br />
-      Young: 1-5 years, Male
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-    <div class="col-md-3 text-center">
-      <img src="peta4.jpg" width="250px" height="200px">
-      <br>
-      Crystal<br />
-      Young: 1-5 years, Female
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-    <div class="col-md-3 text-center">
-      <img src="peta5.jpg" width="250px" height="200px">
-      <br>
-      Louie<br />
-      Adult: 5-7 Years, Male
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-    <div class="col-md-3 text-center">
-      <img src="peta6.jpg" width="250px" height="200px">
-      <br>
-      Monkey<br />
-      Adult: 7-10 Years, Male, Domestic Short Hair
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-     <div class="col-md-3 text-center">
-      <img src="peta7.jpg" width="250px" height="200px">
-      <br>
-      Cheetara<br />
-      Adult: 7-10 Years, Female, Domestic Long Hair
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-
-     <div class="col-md-3 text-center">
-      <img src="peta8.jpg" width="250px" height="200px">
-      <br>
-      Bella<br />
-      Senior: 10 Years+, Female, Domestic Short Hair
-      <br>
-      <a href="#" class="btn btn-info">Details</a>
-    </div>
-
-
 
   </div>
+</div>
+    <!-- Pet 1 Modal -->
+    <div class="modal fade" id="pet1" tabindex="-1" aria-labelledby="pet1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pet1Label">Hal - Puppy (Male)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="peta1.jpg" class="img-fluid rounded mb-3" alt="Hal">
+            <p><b>Age:</b> 8 months</p>
+            <p><b>Breed:</b> Golden Retriever</p>
+            <p><b>Personality:</b> Energetic, friendly, loves outdoor play!</p>
+            <p><b>Adoption Info:</b> Fully vaccinated and microchipped. Great with kids.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Adopt Me</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <br />
-  <br />
- <footer>
-Copyright &copy; 2023 PetVibe<br>
-<a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
- </footer>  
-    
-    
+    <!-- Pet 2 Modal -->
+    <div class="modal fade" id="pet2" tabindex="-1" aria-labelledby="pet2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pet2Label">Richard - Puppy (Male)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="peta2.jpg" class="img-fluid rounded mb-3" alt="Richard">
+            <p><b>Age:</b> 10 months</p>
+            <p><b>Breed:</b> Labrador Mix</p>
+            <p><b>Personality:</b> Smart, loyal, playful, loves treats.</p>
+            <p><b>Adoption Info:</b> Neutered and vaccinated. Good with cats.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Adopt Me</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pet 3 Modal -->
+    <div class="modal fade" id="pet3" tabindex="-1" aria-labelledby="pet3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pet3Label">Day - Young (Male)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="peta3.jpg" class="img-fluid rounded mb-3" alt="Day">
+            <p><b>Age:</b> 3 years</p>
+            <p><b>Breed:</b> Border Collie</p>
+            <p><b>Personality:</b> Very intelligent and active, needs daily walks.</p>
+            <p><b>Adoption Info:</b> Trained and housebroken. Perfect for families.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Adopt Me</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pet 4 Modal -->
+    <div class="modal fade" id="pet4" tabindex="-1" aria-labelledby="pet4Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pet4Label">Crystal - Young (Female)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <img src="peta4.jpg" class="img-fluid rounded mb-3" alt="Crystal">
+            <p><b>Age:</b> 2 years</p>
+            <p><b>Breed:</b> Husky Mix</p>
+            <p><b>Personality:</b> Gentle, loving, enjoys brushing and walks.</p>
+            <p><b>Adoption Info:</b> Spayed, vaccinated, loves children and other pets.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Adopt Me</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Pet 5 Modal -->
+<div class="modal fade" id="pet5" tabindex="-1" aria-labelledby="pet5Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pet5Label">Louie - Adult (Male)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="peta5.jpg" class="img-fluid rounded mb-3" alt="Louie">
+        <p><b>Age:</b> 6 years</p>
+        <p><b>Breed:</b> Bulldog</p>
+        <p><b>Personality:</b> Calm, loyal, enjoys naps and gentle walks.</p>
+        <p><b>Adoption Info:</b> Neutered, vaccinated, and well-behaved around kids.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="adopt.html?pet=Louie&img=images/peta5.jpg" class="btn btn-success">Adopt Me</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    
-</main>
+<!-- Pet 6 -->
+<!-- Pet 6 Modal -->
+<div class="modal fade" id="pet6" tabindex="-1" aria-labelledby="pet6Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pet6Label">Monkey - Adult (Male)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="peta6.jpg" class="img-fluid rounded mb-3" alt="Monkey">
+        <p><b>Age:</b> 9 years</p>
+        <p><b>Breed:</b> Domestic Short Hair</p>
+        <p><b>Personality:</b> Easy-going and affectionate, loves window watching.</p>
+        <p><b>Adoption Info:</b> Litter-trained, vaccinated, and calm around other cats.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="adopt.html?pet=Monkey&img=images/peta6.jpg" class="btn btn-success">Adopt Me</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+
+<!-- Pet 7 -->
+<div class="modal fade" id="pet7" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Cheetara - Adult (Female)</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+      <img src="peta7.jpg" class="img-fluid rounded mb-3">
+      <p><b>Age:</b> 8 years</p>
+      <p><b>Breed:</b> Domestic Long Hair</p>
+      <p><b>Personality:</b> Elegant, independent, enjoys being brushed.</p>
+      <p><b>Adoption Info:</b> Spayed, healthy, suitable for calm homes.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="adopt.html?pet=Cheetara&img=images/peta7.jpg" class="btn btn-success">Adopt Me</a>
+      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div></div>
+</div>
+
+<!-- Pet 8 -->
+<div class="modal fade" id="pet8" tabindex="-1">
+  <div class="modal-dialog"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title">Bella - Senior (Female)</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+    <div class="modal-body">
+      <img src="peta8.jpg" class="img-fluid rounded mb-3">
+      <p><b>Age:</b> 11 years</p>
+      <p><b>Breed:</b> Domestic Short Hair</p>
+      <p><b>Personality:</b> Sweet, gentle, loves quiet companionship.</p>
+      <p><b>Adoption Info:</b> Ideal for seniors or calm households.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="adopt.html?pet=Bella&img=images/peta8.jpg" class="btn btn-success">Adopt Me</a>
+      <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div></div>
+</div>
+    <footer>
+      Copyright &copy; 2023 PetVibe<br>
+      <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
