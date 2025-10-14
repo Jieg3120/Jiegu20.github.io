@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css">  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 <style>
   .badge-notify{
     background:green;
@@ -24,6 +25,13 @@
 }
 .btn { margin-bottom: 50px;
 }
+nav {  text-align: center;
+      font-size: 1.25em;
+}
+nav a { text-decoration: none; }
+nav a:link     { color: #333333; }
+nav a:visited { color: #333333; }
+
   </style>
   </head>
 <main>
@@ -54,9 +62,34 @@
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Instinct-
       Frozen Raw Bites Grain" data-summary="summary 1" data-price="39.99" data-quantity="1" data-image="images/shop1.jpg">Add to Cart</button>
-     <a href="#" class="btn btn-info">Details</a>
-    </div>
+<a href="#" class="btn btn-info" data-toggle="modal" data-target="#product1Modal">Details</a>
 
+    </div>
+<!-- Product 1 Modal -->
+<div class="modal fade" id="product1Modal" tabindex="-1" role="dialog" aria-labelledby="product1ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product1ModalLabel">Instinct - Frozen Raw Bites Grain</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="shop1.jpg" width="100%" alt="Instinct food">
+        <p>This high-protein frozen raw food provides balanced nutrition for your pet...</p>
+        <p><strong>Price:</strong> $39.99</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="Instinct Frozen Raw Bites Grain" data-summary="summary 1" data-price="39.99" data-quantity="1" data-image="images/shop1.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Product 2  -->
     <div class="col-md-3 text-center">
         <img src="shop2.jpg" width="250px" height="200px">
       <br>
@@ -64,8 +97,38 @@
       <br>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Temptations-chicken&salmon 12package" data-summary="summary 2" data-price="17.76" data-quantity="1" data-image="images/shop2.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product2Modal">Details</a>
     </div>
+<!-- Product 2 Modal -->
+<div class="modal fade" id="product2Modal" tabindex="-1" role="dialog" aria-labelledby="product2ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product2ModalLabel">Temptations - Chicken & Salmon 12 Pack</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop2.jpg" width="250px" height="200px" class="mb-3">
+        <p>Crunchy on the outside, soft on the inside — cats can’t resist these chicken & salmon treats.</p>
+        <p><strong>Price: $17.76</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="2" data-name="Temptations - Chicken & Salmon 12 Pack" data-summary="summary 2" data-price="17.76" data-quantity="1" data-image="images/shop2.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!---Product 3---->
 
 
     <div class="col-md-3 text-center">
@@ -74,8 +137,37 @@
       Royal Canin -Feline Health Nutrition Thin slices in Gravy Wet Kitten Food case of 12 <strong>$24.99</strong>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Royal Canin -Feline Health Nutrition Thin slices in Gravy Wet Kitten Food case of 12  " data-summary="summary 3" data-price="24.99" data-quantity="1" data-image="images/shop3.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+          <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product3Modal">Details</a>
     </div>
+
+
+<!-- Product 3 Modal -->
+<div class="modal fade" id="product3Modal" tabindex="-1" role="dialog" aria-labelledby="product3ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product3ModalLabel">Royal Canin - Feline Health Nutrition Kitten Food</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop3.jpg" width="250px" height="200px" class="mb-3">
+        <p>Specially formulated for kittens under 12 months old. Promotes immune system and healthy growth.</p>
+        <p><strong>Price: $24.99</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="3" data-name="Royal Canin Kitten Food" data-summary="summary 3" data-price="24.99" data-quantity="1" data-image="images/shop3.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!----Product 4---->
 
     <div class="col-md-3 text-center">
       <img src="shop4.jpg" width="250px" height="200px">
@@ -83,17 +175,68 @@
       Frisco - Cat face Non-skid Elevated Double Ceramic Cat Bowl,0.5cup <strong>$14.50</strong>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Frisco - Cat face Non-skid Elevated Double Ceramic Cat Bowl,0.5cup" data-summary="summary 4" data-price="14.50" data-quantity="1" data-image="images/shop4.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product4Modal">Details</a>
     </div>
 
+
+  <!-- Product 4 Modal -->
+<div class="modal fade" id="product4Modal" tabindex="-1" role="dialog" aria-labelledby="product4ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product4ModalLabel">Frisco - Cat Face Non-Skid Double Ceramic Bowl</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop4.jpg" width="250px" height="200px" class="mb-3">
+        <p>Stylish and practical double ceramic bowls with a non-skid base, perfect for food and water.</p>
+        <p><strong>Price: $14.50</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Frisco - Cat Face Double Ceramic Bowl" data-summary="summary 4" data-price="14.50" data-quantity="1" data-image="images/shop4.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----Product 5---->
     <div class="col-md-3 text-center">
       <img src="shop5.jpg" width="250px" height="200px">
       <br>
       Arm & Hammer Litter Multi-Cat Strength Clean Burst Clumping Litter, 40-lb box<strong>$18.99</strong>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Arm & Hammer Litter Multi-Cat Strength Clean Burst Clumping Litter, 40-lb box" data-summary="summary 4" data-price="18.99" data-quantity="1" data-image="images/shop5.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product5Modal">Details</a>
     </div>
+      
+
+    <!-- Product 5 Modal -->
+<div class="modal fade" id="product5Modal" tabindex="-1" role="dialog" aria-labelledby="product5ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product5ModalLabel">Arm & Hammer Multi-Cat Clumping Litter</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop5.jpg" width="250px" height="200px" class="mb-3">
+        <p>Strong clumping formula with baking soda for odor control. Ideal for multi-cat households.</p>
+        <p><strong>Price: $18.99</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="5" data-name="Arm & Hammer Multi-Cat Litter" data-summary="summary 5" data-price="18.99" data-quantity="1" data-image="images/shop5.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!----Product 6---->
 
     <div class="col-md-3 text-center">
       <img src="shop6.jpg" width="250px" height="200px">
@@ -101,9 +244,33 @@
       Frisco - Cat face Non-skid Elevated Double Ceramic Cat Bowl,0.5cup <strong>$14.50</strong>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Frisco - Cat face Non-skid Elevated Double Ceramic Cat Bowl,0.5cup" data-summary="summary 4" data-price="14.50" data-quantity="1" data-image="images/shop6.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product6Modal">Details</a>
     </div>
 
+
+  <!-- Product 6 Modal -->
+<div class="modal fade" id="product6Modal" tabindex="-1" role="dialog" aria-labelledby="product6ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product6ModalLabel">Frisco - Cat Face Double Ceramic Bowl (Variant)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop6.jpg" width="250px" height="200px" class="mb-3">
+        <p>Compact version of the popular Frisco double ceramic bowl, ideal for smaller cats or kittens.</p>
+        <p><strong>Price: $14.50</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="6" data-name="Frisco - Cat Face Bowl Variant" data-summary="summary 6" data-price="14.50" data-quantity="1" data-image="images/shop6.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!----Product 7---->
      <div class="col-md-3 text-center">
       <img src="shop7.jpg" width="250px" height="200px">
       <br>
@@ -111,20 +278,63 @@
       <br>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Goody Box Holiday Dog Toys & Treats" data-summary="summary 4" data-price="27.99" data-quantity="1" data-image="images/shop7.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+       <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product7Modal">Details</a>
     </div>
 
-
+<!-- Product 7 Modal -->
+<div class="modal fade" id="product7Modal" tabindex="-1" role="dialog" aria-labelledby="product7ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product7ModalLabel">Goody Box - Holiday Dog Toys & Treats</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop7.jpg" width="250px" height="200px" class="mb-3">
+        <p>Holiday-themed box full of treats and toys for dogs. Perfect gift for the festive season!</p>
+        <p><strong>Price: $27.99</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="7" data-name="Goody Box Holiday Dog Toys & Treats" data-summary="summary 7" data-price="27.99" data-quantity="1" data-image="images/shop7.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!----Product 8---->
      <div class="col-md-3 text-center">
       <img src="shop8.jpg" width="250px" height="200px">
       <br>
       Frisco Holiday Wreath Fetch Squeaky Tennis Ball Dog Toy, Medium, 8 count <strong>$14.99</strong>
       <br>
       <button class="btn btn-danger my-cart-btn" data-id="4" data-name="Frisco Holiday Wreath Fetch Squeaky Tennis Ball Dog Toy, Medium, 8 count" data-summary="summary 4" data-price="14.99" data-quantity="1" data-image="images/shop8.jpg">Add to Cart</button>
-      <a href="#" class="btn btn-info">Details</a>
+      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#product8Modal">Details</a>
     </div>
-
-
+ 
+<!-- Product 8 Modal -->
+<div class="modal fade" id="product8Modal" tabindex="-1" role="dialog" aria-labelledby="product8ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="product8ModalLabel">Frisco Holiday Wreath Squeaky Tennis Ball Dog Toy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shop8.jpg" width="250px" height="200px" class="mb-3">
+        <p>Festive tennis ball toy set that squeaks and entertains your dog during the holidays.</p>
+        <p><strong>Price: $14.99</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger my-cart-btn" data-id="8" data-name="Frisco Holiday Wreath Dog Toy" data-summary="summary 8" data-price="14.99" data-quantity="1" data-image="images/shop8.jpg">Add to Cart</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
   <br />
@@ -138,7 +348,7 @@ Copyright &copy; 2023 PetVibe<br>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="jquery.mycart.js"></script>
+<script type="text/javascript" src="js/jquery.mycart.js"></script>
   <script type="text/javascript">
   $(function () {
 
